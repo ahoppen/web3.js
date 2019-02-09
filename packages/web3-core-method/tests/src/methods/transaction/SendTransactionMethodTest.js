@@ -107,6 +107,8 @@ describe('SendTransactionMethodTest', () => {
         expect(response).toEqual('0x0');
 
         expect(method.callback).toHaveBeenCalledWith(false, '0x0');
+
+        expect(true).toBe(false);
     });
 
     it('calls execute with wallets defined and uses the module default gas properties', async (done) => {
